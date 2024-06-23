@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    background-color: rgb(230, 230, 230);
+}
+
+#mainContainer {
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-container {
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* 헤더를 다른 요소들 위에 위치시키기 위해 z-index를 설정 */
+}
+
+.header {
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 0 50px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    background-color: rgb(230, 230, 230);
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+}
+
+.navi {
+    display: flex;
+    gap: 20px;
+}
+
+.menuItem {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.main {
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    padding-top: 200px; /* 고정된 헤더 영역을 피하기 위한 패딩 */
+}
+
+#mainContents {
+    width: 100%;
+    max-width: 1080px;
+    height: 1400px;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+#mainContents img {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+    margin-bottom: 20px;
+}
+
+.text-content {
+    width: 100%;
+    max-width: 1000px;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 10px;
+    font-weight: 400; /* 본문 텍스트의 폰트 굵기 설정 */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 이미지들을 왼쪽에 정렬 */
+}
